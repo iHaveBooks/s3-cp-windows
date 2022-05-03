@@ -14,6 +14,6 @@ ENV AWSCLI_VERSION='1.17.1'
 
 RUN pip install --quiet --no-cache-dir awscli==${AWSCLI_VERSION}
 
-ADD entrypoint.sh /entrypoint.sh
+ADD entrypoint.bat /entrypoint.bat
 #ENTRYPOINT ["/entrypoint.sh"]
 ENTRYPOINT ["/entrypoint.bat"]
